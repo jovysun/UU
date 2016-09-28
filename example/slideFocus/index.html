@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>此处自行修改</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="此处自行修改">
+    <meta name="keywords" content="此处自行修改">
+    <link rel="stylesheet" type="text/css" href="../../reset.css">
+    <style type="text/css">
+		html{overflow-x:hidden;}
+        .bodyBG{width:100%;background:#ffffff;}
+        .warp{width:100%;background:url(images/bannerBG.jpg) no-repeat center top;}
+        .main{width:1000px;margin:0 auto;position:relative;}
+
+        /*轮播样式start*/
+        #slide_1{position: relative;width: 1000px;height: 604px;z-index: 998;background: #333;}
+        #slide_1 .box{width: 750px;height: 450px;position: relative;margin: 0  auto;}
+        #slide_1 .content{width: 300%;position: absolute;left: 0;}
+        #slide_1 .content .page{width: 750px;float: left;}
+
+        #slide_1 .nums{position: absolute;width: 220px;margin-left: -40px;z-index: 500;left: 50%;bottom: 15px;}
+        #slide_1 .nums li{float: left;margin-right: 4px;background: url(images/icons.png) no-repeat -70px -48px;width: 12px;height: 12px;cursor: pointer;}
+        #slide_1 .nums li.on{background: url(images/icons.png) no-repeat -49px -48px;}        
+        #slide_1 .btn{width: 55px;height: 55px;display: block;position: absolute;top: 50%;text-indent: -999em;z-index: 999;margin-top: -28px;}  
+        #slide_1 .btn.prev{left: 0px;background: url(images/icons.png) no-repeat -100px -28px;}
+        #slide_1 .btn.next{right: 0px;background: url(images/icons.png) no-repeat -154px -28px;}
+        /*轮播样式end*/
+
+    </style>
+</head>
+<body>
+<div class="bodyBG">
+    <div class="warp">
+        <div class="main">
+            <!-- 主体代码部分start -->
+
+            <!-- 轮播代码start -->
+            <div id="slide_1" class="slide">
+  
+
+                <div class="box">               
+                    <ul class="content clearfix">
+                        <li class="page page1" data-page="1">
+                            <a href="http://www.suning.com" target="_blank"><img src="images/focus-1.jpg"></a>
+                        </li>                          
+                        <li class="page page2" data-page="2">
+                            <a href="http://www.suning.com" target="_blank"><img src="images/focus-2.jpg"></a>
+                        </li>                               
+                        <li class="page page3" data-page="3">
+                            <a href="http://www.suning.com" target="_blank"><img src="images/focus-3.jpg"></a>
+                        </li>         
+                    </ul>      
+
+                    <ul class="nums clearfix">                        
+                        <li class="num on"></li>
+                        <li class="num"></li>
+                        <li class="num"></li>                                                      
+                    </ul> 
+                    <a class="btn prev" href="javascript:void(0)">prev</a>
+                    <a class="btn next" href="javascript:void(0)">next</a>                                 
+                </div> 
+
+
+            </div>
+            <!-- 轮播代码end -->
+
+               
+                                                               
+        <!-- 主体代码部分end -->
+        </div>
+    </div>
+</div>
+
+<script src="../../jquery.js"></script>
+<script type="text/javascript" src="../../UU-2.1.js"></script>
+<script type="text/javascript">
+    $(function(){   
+        // 轮播脚本引用 start
+        UU.slideFocus('#slide_1',{'pageWidth':750,'pageHeight':450,'pageCount':3,'auto':true});
+        // 轮播脚本引用 end      
+    });   
+</script>
+
+</body>
+</html>

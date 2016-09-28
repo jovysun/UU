@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>倒计时</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="足球盛会 我们一起HIGH 为不眠夜 全员囤货">
+    <meta name="keywords" content="足球盛会 我们一起HIGH 为不眠夜 全员囤货">
+    <link rel="stylesheet" type="text/css" href="../../reset.css">
+    <style type="text/css">        
+        html{overflow-x:hidden;}
+        .bodyBG{width:100%;background:#ff5500 ;}
+        .warp{width:100%;position:relative;}
+        .warp .bg_coat{position: absolute;width: 1920px;height: 8780px;z-index: 1;left: 50%;margin-left: -960px;}
+		.warp .bg_01{width:100%;height:1658px;background: url(images/bannerBG_01.jpg) no-repeat center top;}
+		.warp .bg_02{width:100%;height:7122px;background: url(images/bannerBG_02.png) no-repeat center top;}
+
+        .main{width:1000px;position:absolute;left:50%;margin-left:-500px;top:0;z-index: 2;}
+
+
+ 		.timeBox{background: url(images/sjb140528_01.jpg) no-repeat;height: 256px;position: relative;}
+        .time{position:absolute;left:657px;top: 40px;width: 226px;}
+        .time span{font-size:24px;color:#ffffff; font-family:"impact";width: 30px;display: inline-block;margin-left: 20px;}    
+
+    </style>
+</head>
+<body>
+<div class="bodyBG">
+<div class="warp">
+
+        <div class="main">
+            <!-- 主体内容开始 -->
+
+            <div class="timeBox">
+                <div class="time"></div>
+            </div>
+
+            <!-- 主体内容结束 -->
+        </div>
+    </div>
+</div>
+
+<script src="../../jquery.js"></script>
+<script type="text/javascript" src="../../UU-2.1.js"></script>
+<script type="text/javascript">
+    $(function(){   	
+        // 调用倒计时控件
+        UU.timedown('.time',{'endDate':'2016/10/25 00:00:00','fromStart':'day'});
+    });     
+</script>
+
+</body>
+</html>

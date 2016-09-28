@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>此处自行修改</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="此处自行修改">
+    <meta name="keywords" content="此处自行修改">
+    <link rel="stylesheet" type="text/css" href="../../reset.css">
+    <style type="text/css">
+		html{overflow-x:hidden;}
+        .bodyBG{width:100%;background:#ffffff;}
+        .warp{width:100%;background:url(images/bannerBG.jpg) no-repeat center top;}
+        .main{width:1000px;margin:0 auto;position:relative;}
+
+        #tab_1{width: 1000px;height: 654px;position: relative;}
+        #tab_1 .tab-btns{position: relative;}
+        #tab_1 .tab-btns .tab-btn{width: 500px;height: 50px;float: left;}
+        #tab_1 .tab-btns .tab-btn a{width: 100%;height: 100%;display: block;}
+        #tab_1 .tab-btns .tab-btn.tb-1 a{background: #583903;}
+        #tab_1 .tab-btns .tab-btn.tb-2 a{background: #583903;}
+        #tab_1 .tab-btns .tab-btn.on a{background: #faa105;}
+        #tab_1 .tab-pane-box{width: 1000px;height: 604px;position: relative;overflow: hidden;}
+        #tab_1 .tab-pane-box .tab-panes{width: 1000px;height: 604px;margin: 0;position: relative;}
+        #tab_1 .tab-pane-box .tab-panes .tab-pane{display: none;}
+        #tab_1 .tab-pane-box .tab-panes .tab-pane.on{display: block;}
+
+        #tab_2{width: 1000px;height: 654px;position: relative;}
+        #tab_2 .tab-btns{position: relative;}
+        #tab_2 .tab-btns .tab-btn{width: 250px;height: 50px;float: left;}
+        #tab_2 .tab-btns .tab-btn a{width: 100%;height: 100%;display: block;}
+        #tab_2 .tab-btns .tab-btn.tb-1 a{background: #583903;}
+        #tab_2 .tab-btns .tab-btn.tb-2 a{background: #583903;}
+        #tab_2 .tab-btns .tab-btn.tb-3 a{background: #583903;}
+        #tab_2 .tab-btns .tab-btn.tb-4 a{background: #583903;}
+        #tab_2 .tab-btns .tab-btn.on a{background: #faa105;}        
+        #tab_2 .tab-pane-box{width: 1000px;height: 604px;position: relative;overflow: hidden;}
+        #tab_2 .tab-pane-box .tab-panes{width: 1000px;height: 604px;margin: 0;position: relative;}
+        #tab_2 .tab-pane-box .tab-panes .tab-pane{display: none;}
+        #tab_2 .tab-pane-box .tab-panes .tab-pane.on{display: block;}
+    </style>
+</head>
+<body>
+<div class="bodyBG">
+    <div class="warp">
+        <div class="main">
+            <!-- 主体代码部分start -->
+
+            <!-- tab切代码start -->
+            <div class="tab" id="tab_1">
+                <ul class="tab-btns clearfix">
+                    <li class="tab-btn tb-1 on"><a href="javascript:void(0)">tab1</a></li>
+                    <li class="tab-btn tb-2"><a href="javascript:void(0)">tab2</a></li>
+                </ul>
+            	<div class="tab-pane-box">
+            		<ul class="tab-panes">
+            			<li class="tab-pane on">
+            				<img src="images/lunbo1.jpg">
+            			</li>
+            			<li class="tab-pane">
+            				<img src="images/lunbo2.jpg">
+            			</li>            			
+            		</ul>
+            	</div>
+
+            </div>
+            <!-- tab切代码end -->           
+            <!-- tab切代码start -->
+            <div class="tab" id="tab_2">
+                <ul class="tab-btns clearfix">
+                    <li class="tab-btn tb-1 on"><a href="javascript:void(0)">tab1</a></li>
+                    <li class="tab-btn tb-2"><a href="javascript:void(0)">tab2</a></li>
+                    <li class="tab-btn tb-3"><a href="javascript:void(0)">tab3</a></li>
+                    <li class="tab-btn tb-4"><a href="javascript:void(0)">tab4</a></li>
+                </ul>                
+                <div class="tab-pane-box">
+                    <ul class="tab-panes">
+                        <li class="tab-pane on">
+                            <img src="images/lunbo1.jpg">
+                        </li>
+                        <li class="tab-pane">
+                            <img src="images/lunbo2.jpg">
+                        </li> 
+                        <li class="tab-pane">
+                            <img src="images/lunbo3.jpg">
+                        </li>
+                        <li class="tab-pane">
+                            <img src="images/lunbo4.jpg">
+                        </li>                                               
+                    </ul>
+                </div>
+
+            </div>
+            <!-- tab切代码end -->                                                                 
+        <!-- 主体代码部分end -->
+        </div>
+    </div>
+</div>
+
+<script src="../../jquery.js"></script>
+<script type="text/javascript" src="../../UU-2.1.js"></script>
+<script type="text/javascript">
+    $(function(){   
+        UU.tab('#tab_1',{'paneCount':2});
+        UU.tab('#tab_2',{'paneCount':4});
+    });     
+</script>
+
+</body>
+</html>
