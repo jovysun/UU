@@ -123,15 +123,16 @@
 <script type="text/javascript" src="../../UU-2.1.js"></script>
 <script type="text/javascript">
     $(function(){
-        // 锚点缓动脚本start
-        $('[data-slow]').click(function(e){
-            var targetId = $(this).attr('href').substring(1);
-            var target = $('[name='+ targetId+']');
-            var  top = target.offset().top;
-            $('window,body,html').animate({scrollTop: top}, 300);
-            e.preventDefault();
-        });
-        // 锚点缓动end         
+	    // 锚点缓动脚本start	
+	    $('[data-slow]').click(function(e){
+		var hrefStr = $(this).attr('href');
+		var targetId = hrefStr.substring(hrefStr.lastIndexOf('#')+1);
+		var target = $('[name='+ targetId+']');
+		var  top = target.length > 0 ? target.offset().top : 0;
+		$('window,body,html').animate({scrollTop: top}, 300);
+		e.preventDefault();
+	    });
+	    // 锚点缓动end     
     })
 </script>
 </body>
