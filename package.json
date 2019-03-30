@@ -1,0 +1,32 @@
+{
+  "name": "uu-jquery",
+  "version": "1.0.0",
+  "description": "jQuery插件库",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovysun/UU.git"
+  },
+  "keywords": [
+    "UU",
+    "jQuery"
+  ],
+  "author": "jovysun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jovysun/UU/issues"
+  },
+  "homepage": "https://github.com/jovysun/UU#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {}
+}
